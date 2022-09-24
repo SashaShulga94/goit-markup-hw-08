@@ -1,0 +1,113 @@
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  transition: border-color var(--trnsform-cubic);
+  &:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+}
+.modal-form-name-field {
+  display: block;
+  font-size: 12px;
+  line-height: 1.16;
+  color: var(--secondary-color-theme-gray);
+  margin-bottom: 4px;
+}
+.modal-form-lable {
+  margin-bottom: 10px;
+}
+.input-field-icon {
+  position: relative;
+}
+.icon-modal-form {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  fill: var(--primary-text-color-theme-dark);
+  transition: fill var(--trnsform-cubic);
+}
+.modal-input:focus + .icon-modal-form {
+  fill: var(--accent-color);
+}
+.modal-form-lable-coment{
+  margin-bottom: 15px;
+}
+.modal-textarea {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  resize: none;
+  transition: border-color var(--trnsform-cubic);
+  &:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+&::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+}
+
+.modal-form-check {
+  appearance: none;
+  position: absolute;
+}
+.modal-form-terms {
+  color: var(--accent-color);
+}
+.modal-form-submit {
+  width: 200px;
+  height: 50px;
+  border: 1px solid var(--accent-color);
+}
+.modal-form-label-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--secondary-color-theme-gray);
+}
+.modal-form-check-icon {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--primary-text-color-theme-dark);
+  border-radius: 2px;
+  color: var(--primary-text-color-theme-dark);
+  cursor: pointer;
+  margin-right: 7px;
+  transition: background-color var(--trnsform-cubic),
+    border-color var(--trnsform-cubic);
+    .modal-form-check:focus + & {
+  box-shadow: 0 0 0 2px var(--accent-color);
+}
+  .modal-form-check:checked + & {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);}
+}
+.modal-form-check-mark {
+  display: none;
+  fill: var(--primary-text-color-theme-light);
+  transition: fill var(--trnsform-cubic);
+  .modal-form-check:checked + .modal-form-check-icon & {
+  display: block;
+}
+}

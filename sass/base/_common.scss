@@ -1,0 +1,43 @@
+.link,
+.logo,
+.email,
+.phone,
+.phone-footer,
+.email-footer,
+.address,
+.portfolio-card__link{
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.list,
+.menu-list {
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.address-data {
+  font-style: normal;
+}
+body {
+  font-family: var(--primary-font);
+  background-color: var(--primary-text-color-theme-light);
+  color: var(--primary-text-color-theme-dark);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}

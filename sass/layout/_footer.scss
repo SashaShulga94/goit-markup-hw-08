@@ -1,0 +1,111 @@
+
+.footer {
+    background: var(--secondary-background-color-theme-light);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .address {
+    line-height: 1.71;
+    color: var(--primary-text-color-theme-light);
+  }
+  .email-footer,
+  .phone-footer {
+    line-height: 1.71;
+    color: var(--secondary-text-color-4footer-gray);
+    transition: color var(--trnsform-cubic);
+
+      
+  &:hover,
+  &:hover,
+  &:focus,
+  &:focus {
+    color: var(--accent-color);
+  }
+  
+  }
+  .address-data {
+    margin-top: 20px;
+  }
+  .addres-text:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .studio-footer {
+    color: var(--primary-text-color-theme-light);
+  }
+  .footer-title {
+    @include font(700, 14px, 16px);
+    text-transform: uppercase;
+    color: var(--primary-text-color-theme-light);
+    margin-bottom: 20px;
+  }
+  .footer-ul {
+    display: flex;
+    justify-content: baseline;
+    column-gap: 10px;
+  }
+  .footer-link {
+   @extend %flex-link;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--primary-text-color-theme-light);
+    transition: color var(--trnsform-cubic),
+      background-color var(--trnsform-cubic);
+  }
+  .icon-footer {
+    fill: currentColor;
+    transition: fill var(--trnsform-cubic), background-color var(--trnsform-cubic);
+  }
+  .footer-link-li :hover,
+  .footer-link-li :focus {
+    color: var(--primary-text-color-theme-light);
+    background-color: var(--accent-color);
+  }
+  
+  .neigborhood {
+    width: 231px;
+    margin-right: 70px;
+  }
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer-form-title {
+    @include font(700, 14px, 16px);
+    color: var(--primary-text-color-theme-light);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .footer-form-email {
+    display: flex;
+  }
+  .footer-form {
+    width: 570px;
+    margin-left: auto;
+  }
+  
+  .footer-input {
+    display: inline;
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    padding: 15px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .footer-form-button {
+    display: inline;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    padding-left: 8px;
+    margin-right: 0;
+  }
+  .icon-sign-up {
+    position: absolute;
+    margin-left: 10px;
+  }
