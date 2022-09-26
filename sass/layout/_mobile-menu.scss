@@ -1,3 +1,8 @@
+
+.page-header {
+    padding: 10px 0;
+    border-bottom: 1px solid #ececec;
+  }
 .mobile-menu {
   position: fixed;
   left: 0;
@@ -14,7 +19,11 @@
 }
 .mobile-menu__container {
   position: relative;
+  display: flex;
   padding: 48px 25px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0;
 }
 .menu-mobile__btn-close {
   position: absolute;
@@ -25,6 +34,12 @@
   background-color: transparent;
   border: none;
   padding: 0;
+  transition: color var(--trnsform-cubic);
+
+  & :hover,
+  & :focus {
+    fill: var(--accent-color);
+  }
 }
 .menu-mobile__close {
   width: 19px;
@@ -35,8 +50,12 @@
   visibility: visible;
   pointer-events: auto;
 }
+.menu-list-mobile-top{
+  margin-bottom: auto;
+}
 .menu-list-mobile {
   display: block;
+  margin-bottom: 64px;
 
   & :hover,
   & :focus {
@@ -78,22 +97,37 @@ margin-bottom: 32px;
     display: flex;
     align-items: center;
     gap: 20px;
-    margin-bottom: 0;
 }
 .mobile-link{
+  position: relative;
   @include font(500, 18px, 22px);
   color: var(--accent-color);
   letter-spacing: 0.02em;
-}
-.link-border{
-    display: block;
-    position: relative;
-    
-&::after{
+&::after {
+  position: absolute;
+  top: 0;
+  right: -10px;
 content: '';
-position: absolute;
+display: flex;
 width: 1px;
 height: 100%;
 background-color: rgba(33, 33, 33, 0.2);
 }}
-// :not(:last-child)
+.mobile-link__last{
+   position: relative;
+  @include font(500, 18px, 22px);
+  color: var(--accent-color);
+  letter-spacing: 0.02em;
+}
+
+.mobile-content{
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bottom-content{
+  margin-bottom: 0;
+}
+.top-content{
+  margin-top: 0;
+
+}
