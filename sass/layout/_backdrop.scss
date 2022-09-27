@@ -37,11 +37,17 @@
   &:hover, &:focus{
   fill: var(--accent-color);
 }
-  
 }
 
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+@media screen and (max-width: 1199px){
+  .modal {
+  width: 450px;
+  height: 609px;
+}
+
 }

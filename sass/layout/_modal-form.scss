@@ -111,3 +111,8 @@
   display: block;
 }
 }
+@media screen and (max-width: 1199px){
+.modal-form-label-check{
+   @include font(400, 12px, 14px);
+}
+}
