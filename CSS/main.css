@@ -87,16 +87,19 @@ body {
 }
 
 .section {
+  padding-bottom: 94px;
   padding-top: 94px;
 }
 
 @media screen and (max-width: 1199px) {
   .section {
+    padding-bottom: 60px;
     padding-top: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .section {
+    padding-bottom: 94px;
     padding-top: 94px;
   }
 }
@@ -117,6 +120,8 @@ body {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .title {
@@ -127,6 +132,13 @@ body {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 1199px) {
+  .title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.1785714286;
+  }
+}
 .logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -182,8 +194,6 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 10px 15px;
-  margin-left: 0;
-  margin-right: 0;
 }
 
 .menu-mobile__btn-open {
@@ -472,6 +482,10 @@ body {
   gap: 30px;
 }
 
+.what-we-do-section {
+  padding-top: 0;
+}
+
 .what-we-do__text {
   font-weight: 700;
   font-size: 14px;
@@ -567,6 +581,7 @@ body {
 .clients {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -593,6 +608,16 @@ body {
   fill: currentColor;
 }
 
+@media screen and (max-width: 1199px) {
+  .clients__link {
+    width: 226px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .clients__link {
+    width: 210px;
+  }
+}
 .footer {
   background: var(--secondary-background-color-theme-light);
   padding-top: 60px;
@@ -665,7 +690,7 @@ body {
   background-color: var(--accent-color);
 }
 
-.neigborhood {
+.footer-address {
   width: 231px;
   margin-right: 70px;
 }
@@ -720,6 +745,20 @@ body {
   margin-left: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-container {
+    flex-wrap: wrap;
+  }
+  .logo {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .footer-address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .portfolio-section {
   padding-top: 100px;
   padding-bottom: 88px;

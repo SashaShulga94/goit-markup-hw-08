@@ -63,7 +63,7 @@
     background-color: var(--accent-color);
   }
   
-  .neigborhood {
+  .footer-address {
     width: 231px;
     margin-right: 70px;
   }
@@ -108,4 +108,19 @@
   .icon-sign-up {
     position: absolute;
     margin-left: 10px;
+  }
+
+  @media screen and (max-width: 767px){
+    .footer-container{
+     flex-wrap: wrap;
+    }
+    .logo{
+     margin-left: 0;
+     margin-right: 0;
+    }
+    .footer-address{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
