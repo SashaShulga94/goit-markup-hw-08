@@ -87,19 +87,16 @@ body {
 }
 
 .section {
-  padding-bottom: 94px;
   padding-top: 94px;
 }
 
 @media screen and (max-width: 1199px) {
   .section {
-    padding-bottom: 60px;
     padding-top: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .section {
-    padding-bottom: 94px;
     padding-top: 94px;
   }
 }
@@ -473,10 +470,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-}
-
-.what-we-do-section {
-  padding-bottom: 94px;
 }
 
 .what-we-do__text {
