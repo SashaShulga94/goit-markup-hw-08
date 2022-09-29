@@ -8,5 +8,6 @@
 @media screen and (max-width: 1199px) {
   .title {
     @include font(700, 28px, 33px);
+    margin-bottom: 30px;
   }
 }
