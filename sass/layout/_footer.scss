@@ -214,3 +214,29 @@
     margin-bottom: 20px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+  display: flex;
+  align-items: baseline;
+  }
+ .footer-address{
+  text-align: start;
+  padding-bottom: 0;
+  margin-right: 70px;
+ }
+ .addres-text {
+    text-align: start ;
+  }
+  .footer-title {
+    text-align: start;
+  }
+  .footer-form-title {
+    text-align: start;
+  }
+  .footer-input {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+}

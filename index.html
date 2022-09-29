@@ -243,40 +243,89 @@
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="list list-wrap">
             <li class="what-we-do__card">
-              <img
-                srcset="./images/what-we-do/photo1@2x.jpg 2x"
-                src="./images/photo1.jpg"
-                alt="Написання програм"
-                width="370"
-                height="294"
-                class="photo1"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/what-we-do/photo1.jpg    1x,
+                    ./images/what-we-do/photo1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/what-we-do/photo1.webp    1x,
+                    ./images/what-we-do/photo1@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/photo1.jpg"
+                  alt="Написання програм"
+                  class="photo1"
+                />
+              </picture>
+
               <div class="what-we-do__bg">
                 <p class="what-we-do__text">Десктопні додатки</p>
               </div>
             </li>
             <li class="what-we-do__card">
-              <img
-                srcset="./images/what-we-do/photo2@2x.jpg 2x"
+
+              <picture>
+                <source
+                  srcset="
+                    ./images/what-we-do/photo2.jpg    1x,
+                    ./images/what-we-do/photo2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/what-we-do/photo2.webp    1x,
+                    ./images/what-we-do/photo2@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
                 src="./images/photo2.jpg"
                 alt="Створення додатків для смартфону"
-                width="370"
-                height="294"
                 class="photo2"
               />
+              </picture>
+              
               <div class="what-we-do__bg">
                 <p class="what-we-do__text">Мобільні додатки</p>
               </div>
             </li>
             <li class="what-we-do__card">
-              <img
-                srcset="./images/what-we-do/photo3@2x.jpg 2x"
+              <picture>
+                <source
+                  srcset="
+                    ./images/what-we-do/photo3.jpg    1x,
+                    ./images/what-we-do/photo3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/what-we-do/photo3.webp    1x,
+                    ./images/what-we-do/photo3@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
                 src="./images/photo3.jpg"
                 alt="Створення дизайну"
-                width="370"
-                height="294"
                 class="photo3"
               />
+              </picture>
+              
               <div class="what-we-do__bg">
                 <p class="what-we-do__text">Дизайнерські рішення</p>
               </div>
@@ -287,7 +336,7 @@
 
       <!------------------- team ------------------>
 
-      <section class="section team ">
+      <section class="section team">
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="list team__list">
@@ -295,7 +344,7 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/demyanenko-pc.jpg 1x,
+                    ./images/team/demyanenko-pc.jpg    1x,
                     ./images/team/demyanenko-pc@2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
@@ -303,7 +352,7 @@
                 />
                 <source
                   srcset="
-                    ./images/team/demyanenko-pc.webp 1x,
+                    ./images/team/demyanenko-pc.webp    1x,
                     ./images/team/demyanenko-pc@2x.webp 2x
                   "
                   media="(min-width: 1200px)"
@@ -311,7 +360,7 @@
                 />
                 <source
                   srcset="
-                    ./images/team/demyanenko-tab.jpg 1x,
+                    ./images/team/demyanenko-tab.jpg    1x,
                     ./images/team/demyanenko-tab@2x.jpg 2x
                   "
                   media="(min-width: 768px)"
@@ -319,7 +368,7 @@
                 />
                 <source
                   srcset="
-                    ./images/team/demyanenko-tab.webp 1x,
+                    ./images/team/demyanenko-tab.webp    1x,
                     ./images/team/demyanenko-tab@2x.webp 2x
                   "
                   media="(min-width: 768px)"
@@ -327,7 +376,7 @@
                 />
                 <source
                   srcset="
-                    ./images/team/demyanenko.jpg 1x,
+                    ./images/team/demyanenko.jpg    1x,
                     ./images/team/demyanenko@2x.jpg 2x
                   "
                   media="(max-width: 767px)"
@@ -335,17 +384,13 @@
                 />
                 <source
                   srcset="
-                    ./images/team/demyanenko.webp 1x,
+                    ./images/team/demyanenko.webp    1x,
                     ./images/team/demyanenko@2x.webp 2x
                   "
                   media="(max-width: 767px)"
                   type="image/webp"
                 />
-                <img
-                  src="./images/demyanenko.jpg"
-                  alt="Ігор Дем'яненко"
-                
-                />
+                <img src="./images/demyanenko.jpg" alt="Ігор Дем'яненко" />
               </picture>
 
               <div class="team__data">
@@ -407,7 +452,7 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/repina-pc.jpg 1x,
+                    ./images/team/repina-pc.jpg    1x,
                     ./images/team/repina-pc@2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
@@ -415,7 +460,7 @@
                 />
                 <source
                   srcset="
-                    ./images/team/repina-pc.webp 1x,
+                    ./images/team/repina-pc.webp    1x,
                     ./images/team/repina-pc@2x.webp 2x
                   "
                   media="(min-width: 1200px)"
@@ -423,7 +468,7 @@
                 />
                 <source
                   srcset="
-                    ./images/team/repina-tab.jpg 1x,
+                    ./images/team/repina-tab.jpg    1x,
                     ./images/team/repina-tab@2x.jpg 2x
                   "
                   media="(min-width: 768px)"
@@ -431,7 +476,7 @@
                 />
                 <source
                   srcset="
-                    ./images/team/repina-tab.webp 1x,
+                    ./images/team/repina-tab.webp    1x,
                     ./images/team/repina-tab@2x.webp 2x
                   "
                   media="(min-width: 768px)"
@@ -439,7 +484,7 @@
                 />
                 <source
                   srcset="
-                    ./images/team/repina.jpg 1x,
+                    ./images/team/repina.jpg    1x,
                     ./images/team/repina@2x.jpg 2x
                   "
                   media="(max-width: 767px)"
@@ -447,18 +492,15 @@
                 />
                 <source
                   srcset="
-                    ./images/team/repina.webp 1x,
+                    ./images/team/repina.webp    1x,
                     ./images/team/repina@2x.webp 2x
                   "
                   media="(max-width: 767px)"
                   type="image/webp"
                 />
-                 <img
-                src="./images/repina.jpg"
-                alt="Ольга Рєпіна"
-              />
+                <img src="./images/repina.jpg" alt="Ольга Рєпіна" />
               </picture>
-             
+
               <div class="team__data">
                 <h3 class="team__teammate">Ольга Рєпіна</h3>
                 <p class="team__position" lang="en">Frontend Developer</p>
@@ -518,7 +560,7 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/tarasov-pc.jpg 1x,
+                    ./images/team/tarasov-pc.jpg    1x,
                     ./images/team/tarasov-pc@2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
@@ -526,7 +568,7 @@
                 />
                 <source
                   srcset="
-                    ./images/team/tarasov-pc.webp 1x,
+                    ./images/team/tarasov-pc.webp    1x,
                     ./images/team/tarasov-pc@2x.webp 2x
                   "
                   media="(min-width: 1200px)"
@@ -534,7 +576,7 @@
                 />
                 <source
                   srcset="
-                    ./images/team/tarasov-tab.jpg 1x,
+                    ./images/team/tarasov-tab.jpg    1x,
                     ./images/team/tarasov-tab@2x.jpg 2x
                   "
                   media="(min-width: 768px)"
@@ -542,7 +584,7 @@
                 />
                 <source
                   srcset="
-                    ./images/team/tarasov-tab.webp 1x,
+                    ./images/team/tarasov-tab.webp    1x,
                     ./images/team/tarasov-tab@2x.webp 2x
                   "
                   media="(min-width: 768px)"
@@ -550,7 +592,7 @@
                 />
                 <source
                   srcset="
-                    ./images/team/tarasov.jpg 1x,
+                    ./images/team/tarasov.jpg    1x,
                     ./images/team/tarasov@2x.jpg 2x
                   "
                   media="(max-width: 767px)"
@@ -558,18 +600,15 @@
                 />
                 <source
                   srcset="
-                    ./images/team/tarasov.webp 1x,
+                    ./images/team/tarasov.webp    1x,
                     ./images/team/tarasov@2x.webp 2x
                   "
                   media="(max-width: 767px)"
                   type="image/webp"
                 />
-                 <img
-                src="./images/tarasov.jpg"
-                alt="Микола Тарасов"
-              />
+                <img src="./images/tarasov.jpg" alt="Микола Тарасов" />
               </picture>
-             
+
               <div class="team__data">
                 <h3 class="team__teammate">Микола Тарасов</h3>
                 <p class="team__position" lang="en">Marketing</p>
@@ -629,7 +668,7 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/yermakov-pc.jpg 1x,
+                    ./images/team/yermakov-pc.jpg    1x,
                     ./images/team/yermakov-pc@2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
@@ -637,7 +676,7 @@
                 />
                 <source
                   srcset="
-                    ./images/team/tarasov-pc.webp 1x,
+                    ./images/team/tarasov-pc.webp    1x,
                     ./images/team/tarasov-pc@2x.webp 2x
                   "
                   media="(min-width: 1200px)"
@@ -645,7 +684,7 @@
                 />
                 <source
                   srcset="
-                    ./images/team/yermakov-tab.jpg 1x,
+                    ./images/team/yermakov-tab.jpg    1x,
                     ./images/team/yermakov-tab@2x.jpg 2x
                   "
                   media="(min-width: 768px)"
@@ -653,7 +692,7 @@
                 />
                 <source
                   srcset="
-                    ./images/team/yermakov-tab.webp 1x,
+                    ./images/team/yermakov-tab.webp    1x,
                     ./images/team/yermakov-tab@2x.webp 2x
                   "
                   media="(min-width: 768px)"
@@ -661,7 +700,7 @@
                 />
                 <source
                   srcset="
-                    ./images/team/yermakov.jpg 1x,
+                    ./images/team/yermakov.jpg    1x,
                     ./images/team/yermakov@2x.jpg 2x
                   "
                   media="(max-width: 767px)"
@@ -669,18 +708,15 @@
                 />
                 <source
                   srcset="
-                    ./images/team/yermakov.webp 1x,
+                    ./images/team/yermakov.webp    1x,
                     ./images/team/yermakov@2x.webp 2x
                   "
                   media="(max-width: 767px)"
                   type="image/webp"
                 />
-                   <img
-                src="./images/yermakov.jpg"
-                alt="Михайло Єрмаков"
-              />
+                <img src="./images/yermakov.jpg" alt="Михайло Єрмаков" />
               </picture>
-            
+
               <div class="team__data">
                 <h3 class="team__teammate">Михайло Єрмаков</h3>
                 <p class="team__position" lang="en">UI Designer</p>
