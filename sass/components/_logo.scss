@@ -9,7 +9,7 @@
   .logo__web {
     color: var(--accent-color);
   }
- @media screen and (min-width: 480px) { 
+ @media screen and (max-width: 480px) { 
   .logo{
   margin-right: 0;
   margin-left: 0;
