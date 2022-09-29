@@ -853,6 +853,9 @@ body {
     padding-bottom: 0;
     margin-right: 70px;
   }
+  .footer-join {
+    margin-right: 92px;
+  }
   .addres-text {
     text-align: start;
   }
@@ -930,6 +933,7 @@ body {
 
 .portfolio-card__text {
   flex-grow: 1;
+  width: 100%;
   padding: 20px 24px;
   border-left: 1px solid var(--border-color-for-portfolio);
   border-right: 1px solid var(--border-color-for-portfolio);
@@ -981,10 +985,26 @@ body {
     flex-wrap: wrap;
     margin-bottom: 40px;
   }
+  .portfolio-card__text {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
+  .portfolio-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .portfolio-card__text {
     width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    padding-top: 100px;
+    padding-bottom: 88px;
+  }
+  .portfolio-card__text {
+    width: 370px;
   }
 }
 .modal-form {
