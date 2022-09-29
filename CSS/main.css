@@ -768,6 +768,9 @@ body {
   .addres-text {
     text-align: center;
   }
+  .address-list {
+    width: 232px;
+  }
   .footer-join {
     padding-bottom: 60px;
     margin-left: auto;
