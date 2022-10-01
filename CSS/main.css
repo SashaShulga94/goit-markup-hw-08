@@ -998,6 +998,10 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .portfolio-card__item {
+    width: 100%;
+    max-width: 450px;
+  }
   .portfolio-section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1008,7 +1012,8 @@ body {
     margin-bottom: 40px;
   }
   .portfolio-card__text {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
