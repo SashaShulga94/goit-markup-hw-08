@@ -33,16 +33,27 @@
     margin-bottom: 30px;
   }
   @media screen and (max-width: 767px){
+    .features-list__item{
+      width: 100%;
+      max-width: 450px;
+    }
+    .features-list__toumb{
+      width: 100%;
+      max-width: 450px;
+    }
     .features-list__img{
-      width: 450px;
+      width: 100%;
+      max-width: 450px;
     }
      .features-list__text{
-      width: 450px;
+      width: 100%;
+      max-width: 450px;
       margin-bottom: 30px;
      }
      .features-list__title{
       text-align: center;
-      width: 450px;
+      width: 100%;
+      max-width: 450px;
      }
     .features-list__item {
     margin-right: 0;

@@ -32,7 +32,8 @@
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    width: 360px;
+    width: 100%;
+    max-width: 360px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -42,20 +43,21 @@
     max-width: 767px;
     padding-bottom: 118px;
     padding-top: 118px;
-    background-image: url(../images/hero/hero-mobile@2x.jpg);
+    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)),
+      url(../images/hero/hero-mobile@2x.jpg);
   }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .hero-section {
     height: 400px;
     padding-bottom: 118px;
     padding-top: 118px;
     background-size: cover;
-   background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)),
+    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)),
       url(../images/hero/hero-tablet.jpg);
-}
-.hero-title {
+  }
+  .hero-title {
     @include font(900, 26px, 42px);
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -71,20 +73,21 @@
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero-section {
-    background-image: url(../images/hero/hero-tablet@2x.jpg);
+    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)),
+      url(../images/hero/hero-tablet@2x.jpg);
   }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
   .hero-section {
     height: 600px;
     padding-bottom: 200px;
     padding-top: 200px;
     background-size: cover;
-   background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)),
+    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)),
       url(../images/hero/hero.jpg);
-}
-.hero-title {
+  }
+  .hero-title {
     @include font(900, 44px, 60px);
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -104,8 +107,6 @@
       url(../images/hero/hero@2x.jpg);
   }
 }
-
-
 
 // @media screen and (min-width: 768px) {
 //   .hero-section {
@@ -131,9 +132,6 @@
 //     background-image: url(../images/hero/hero-tablet@2x.jpg);
 //   }
 // }
-
-
-
 
 // .hero-title {
 //   font-weight: 900;

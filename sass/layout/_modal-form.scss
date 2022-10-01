@@ -1,6 +1,10 @@
+
+
 .modal-form {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 450px;
 }
 
 .form-title {
@@ -9,6 +13,8 @@
   line-height: 1.15;
   text-align: center;
   margin-bottom: 12px;
+  width: 100%;
+  max-width: 450px;
 }
 .modal-input {
   width: 100%;
@@ -31,6 +37,8 @@
 }
 .modal-form-lable {
   margin-bottom: 10px;
+  width: 100%;
+  max-width: 450px;
 }
 .input-field-icon {
   position: relative;
