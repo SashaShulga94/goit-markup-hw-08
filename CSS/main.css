@@ -1225,12 +1225,16 @@ body {
 @media screen and (max-width: 767px) {
   .backdrop {
     width: 100%;
-    max-width: 450px;
+    max-width: 767px;
   }
   .modal {
     width: 100%;
     max-width: 450px;
     height: 609px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 .page-header {
