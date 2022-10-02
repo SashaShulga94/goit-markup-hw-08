@@ -1311,7 +1311,6 @@ body {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.175;
-  text-transform: uppercase;
   color: var(--primary-text-color-theme-light);
   letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-dark);
